@@ -1,0 +1,14 @@
+#ignore mac files
+.DS_Store
+
+# ignore test harness output
+.ok_history
+.ok_messages
+.ok_storage.db
+ok
+
+# ignore vscode files
+.vscode
+
+# ignore python cache
+__pycache__
