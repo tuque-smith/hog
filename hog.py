@@ -131,9 +131,9 @@ def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
     while(score0 < goal and score1 < goal):
         # simulate the current player's turn
         if (player == 0):
-            score0 += take_turn(strategy0(score0, score1), score1)
+            score0 += take_turn(strategy0(score0, score1), score1, dice)
         else:
-            score1 += take_turn(strategy1(score1, score0), score0)
+            score1 += take_turn(strategy1(score1, score0), score0, dice)
     
         # determine whether the swine swap rule should take effect
         if (is_swap(score0, score1)):
